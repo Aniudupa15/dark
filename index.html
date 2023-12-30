@@ -1,0 +1,81 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bit Protector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      padding: 20px;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px; /* Set a maximum width for larger screens */
+    }
+
+    label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button:hover {
+      background-color: #0c6610;
+    }
+
+    #resultContainer {
+      margin-top: 10px;
+      width: 100%;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        max-width: none; /* Remove max-width for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <label for="urlInput">Enter URL:</label>
+    <input type="text" id="urlInput" placeholder="https://example.com">
+    <button id="getDataButton">Get Data</button>
+    <div id="resultContainer"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

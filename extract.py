@@ -24,7 +24,7 @@ def extract_and_save_html(url, output_file='website_source_code.html'):
 
 if __name__ == "__main__":
     # Specify the URL of the website you want to extract
-    website_url = 'https://software.techkeshri.com'
+    website_url = 'https://softonic.com'
 
     # Call the function to extract and save the HTML content
     extract_and_save_html(website_url)
